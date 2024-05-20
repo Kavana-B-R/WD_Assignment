@@ -3,37 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        nav{
-            display: flex;
-            height: 100px;
-            background-color: aqua;
-        }
-    </style>
+    <title>Anime Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <li> <a href="#Home">home</a></li>
-            <li> <a href="#About us">About us</a></li>
-            <li> <a href="#Contact">Contact</a></li>
+            <a href="home">Home</a>
+            <a href="aboutus">About Us</a>
+            <a href="contact">Contact</a>
         </nav>
     </header>
-        <section id="Home">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tenetur debitis accusamus deleniti quis maxime recusandae ullam, aut, veritatis doloribus at ad nesciunt vero? Modi, sequi exercitationem. Et, cum maiores.
-        </section>
-        <section id="About us">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, cum? Totam, maiores. Voluptas dolorem facilis, assumenda odit dolorum incidunt cupiditate ipsam, rem, quaerat fugiat quasi? Culpa est enim ducimus facilis?
-        </section>
-        <section id="Contact">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, necessitatibus itaque! Reiciendis dolorum consectetur ea, facere cumque eos officiis quam quae voluptates qui porro earum quaerat quod dolore, ullam obcaecati.
-        </section>
-        <footer>
 
-        </footer>
+    <section id="home">
+        <h1>Welcome to Our Anime World</h1>
+        <div class="anime-images"></div>
+        <div class="anime-content">
+            <p>Explore the fascinating world of anime through our curated collection of series, characters, and art.</p>
+        </div>
+    </section>
 
+    <section id="aboutus">
+        <h1>About Us</h1>
+        <p>We are passionate anime fans who want to share our love for this art form with fellow enthusiasts.</p>
+    </section>
 
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea placeholder="Your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
+    <footer>
+        <h3>Developed with 💙 by Anime Enthusiasts</h3>
+        <div class="social-media">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
